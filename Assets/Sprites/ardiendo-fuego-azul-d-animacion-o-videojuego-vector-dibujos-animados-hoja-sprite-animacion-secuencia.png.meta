@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: 3741c724112124344a7343f70b0d1f9b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_0
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 432
+        width: 99
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f9effd6a3ddbf40b9b30841d3fb74a
+      internalID: -922676495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_1
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 436
+        width: 99
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f51aace7f965a439782547ca0f4675
+      internalID: 2069393372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_3
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 436
+        width: 106
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34a0ed6b931c3a41bf6d56080bfc89f
+      internalID: 184937756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_4
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 434
+        width: 115
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54352ec664a46843b594f0f571292bc
+      internalID: 955455518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 432
+        width: 79
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b845a7d567934408428b7de33dba6a
+      internalID: 479787124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_6
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 433
+        width: 93
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e147c186d8ec074fa43338adc0e1066
+      internalID: 515298085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 431
+        width: 53
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea912b770d65bb43a3166b85f9b0434
+      internalID: -692544100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 432
+        width: 75
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27af4edb3b719f4ca842d245ea9d5c8
+      internalID: 135665412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_12
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 94
+        width: 116
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589f028b91f3d3842b69d64e6cdbcb45
+      internalID: -707740028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_21
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 95
+        width: 104
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6bfe72c1bcbb24a93a523d45bf9c2a
+      internalID: 131345568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_22
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 95
+        width: 119
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51bd2ac36228e447b9270f9efc5aa3c
+      internalID: -1153837350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_24
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 95
+        width: 116
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7c20b1fc8596745ac823a6c1305961
+      internalID: -507116452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_25
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 95
+        width: 121
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31df4edc45652445aa00925d66137e7
+      internalID: 1036040524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_26
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 94
+        width: 113
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f474768b9c5749241b7081fe0970bf77
+      internalID: 1144784071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_27
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 94
+        width: 116
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f535a8cb504f9846a9dd79c9f7693e6
+      internalID: -566510447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_30
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 96
+        width: 104
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa80d73110cb7da4b9ef182faa686694
+      internalID: 163039431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0752e5e7b49528f4cac212a775444f9a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_0: -922676495
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_1: 2069393372
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_10: 135665412
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_11: 1430137459
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_12: -707740028
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_13: -207993140
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_14: -124240640
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_15: -797012037
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_16: -1411811933
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_17: 554723577
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_18: 392946692
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_19: 927228383
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_2: -680468983
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_20: -1044244506
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_21: 131345568
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_22: -1153837350
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_23: -268299174
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_24: -507116452
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_25: 1036040524
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_26: 1144784071
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_27: -566510447
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_28: -274032985
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_29: 392104878
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_3: 184937756
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_30: 163039431
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_4: 955455518
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_5: 479787124
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_6: 515298085
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_7: 611256603
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_8: -1578961303
+      ardiendo-fuego-azul-d-animacion-o-videojuego-vector-dibujos-animados-hoja-sprite-animacion-secuencia_9: -692544100
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
