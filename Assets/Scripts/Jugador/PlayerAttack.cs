@@ -54,6 +54,10 @@ public class PlayerAttack : MonoBehaviour
                 if (enemyHealth != null)
                     enemyHealth.RecibirDanio(playerStats.danio);
 
+                EnemyBoss boss = golpe.collider.GetComponent<EnemyBoss>();
+                if (boss != null)
+                    boss.RecibirDanio(playerStats.danio);
+
                 EnemyMago mago = golpe.collider.GetComponent<EnemyMago>();
                 if (mago != null)
                 {

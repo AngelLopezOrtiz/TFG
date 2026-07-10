@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Protagonista
       objectReference: {fileID: 0}
+    - target: {fileID: 1577693301650043, guid: 66bf6437848d07c44b775634946c31a0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4459407071556869833, guid: 66bf6437848d07c44b775634946c31a0, type: 3}
+      propertyPath: velocidad
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7042012884675200925, guid: 66bf6437848d07c44b775634946c31a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -241.21
@@ -647,10 +655,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1894982693247406176, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
       propertyPath: rangoMelee
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -1894982693247406176, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
       propertyPath: cooldownMelee
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1894982693247406176, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
+      propertyPath: prefabProyectil
+      value: 
+      objectReference: {fileID: 7340274593893133297, guid: 0d192be75eda1a140968b1ffd229ad40, type: 3}
+    - target: {fileID: -1894982693247406176, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
+      propertyPath: rangoGolpeMelee
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -1894982693247406176, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
@@ -711,11 +727,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9089399997138689513, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
       propertyPath: m_Size.x
-      value: 7.400296
+      value: 7.605832
       objectReference: {fileID: 0}
     - target: {fileID: 9089399997138689513, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
       propertyPath: m_Offset.x
-      value: 0.6623521
+      value: 0.55958414
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089399997138689513, guid: 06677ddd8f218da4d82f3ca44139bc49, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

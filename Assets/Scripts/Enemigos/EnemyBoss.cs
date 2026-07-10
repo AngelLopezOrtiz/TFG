@@ -19,9 +19,15 @@ public class EnemyBoss : MonoBehaviour
     public float danioDistancia = 10f;
     public float cooldownDistancia = 3f;
     public GameObject prefabProyectil;
+    public Color colorProyectil = Color.red; // color del proyectil del boss
+
+    [Header("Debug Golpe")]
+    public float duracionDebugGolpe = 0.5f; // cuánto se ve el círculo tras golpear
 
     private float tiempoUltimoMelee = 0f;
     private float tiempoUltimaDistancia = 0f;
+    private float tiempoGolpeDibujado = -999f; // cuándo fue el último GolpeMelee
+    private bool muerto = false;
 
     private Transform jugador;
     private Animator _animator;
@@ -45,6 +51,7 @@ public class EnemyBoss : MonoBehaviour
 
     void Update()
     {
+        if (muerto) return;
         if (jugador == null) return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
@@ -69,15 +76,20 @@ public class EnemyBoss : MonoBehaviour
     // Llamar este método desde un Animation Event en el frame del golpe
     public void GolpeMelee()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, rangoGolpeMelee, LayerMask.GetMask("Jugador"));
-        if (hit != null)
+        tiempoGolpeDibujado = Time.time; // marca el momento para el gizmo
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, rangoGolpeMelee);
+        foreach (Collider2D hit in hits)
         {
-            PlayerStats stats = hit.GetComponent<PlayerStats>();
-            stats?.RecibirDanio(danioMelee);
-            Debug.Log("Golpe melee conectado al jugador");
+            if (hit.CompareTag("Jugador"))
+            {
+                PlayerStats stats = hit.GetComponent<PlayerStats>();
+                stats?.RecibirDanio(danioMelee);
+                Debug.Log("Golpe melee conectado al jugador");
+                return;
+            }
         }
-        else
-            Debug.Log("Golpe melee fallado - jugador fuera de rango");
+        Debug.Log("Golpe melee fallado - jugador fuera de rango");
     }
 
     private void AtacarDistancia()
@@ -89,6 +101,11 @@ public class EnemyBoss : MonoBehaviour
         {
             Vector2 direccion = (jugador.position - transform.position).normalized;
             GameObject proyectil = Instantiate(prefabProyectil, transform.position, Quaternion.identity);
+
+            // Teñir solo el proyectil del boss, sin tocar el prefab
+            SpriteRenderer sr = proyectil.GetComponent<SpriteRenderer>();
+            if (sr != null) sr.color = colorProyectil;
+
             Proyectil p = proyectil.GetComponent<Proyectil>();
             if (p != null) p.Inicializar(direccion, danioDistancia);
         }
@@ -96,6 +113,8 @@ public class EnemyBoss : MonoBehaviour
 
     public void RecibirDanio(float cantidad)
     {
+        if (muerto) return;
+
         vidaActual -= cantidad;
         GetComponent<ParpadeoGolpe>()?.Parpadear();
 
@@ -103,17 +122,20 @@ public class EnemyBoss : MonoBehaviour
             Morir();
     }
 
-    public void OnBossMuerto()
+    private void Morir()
     {
+        muerto = true;
         Debug.Log("Boss derrotado - volviendo al overworld");
         PlayerPrefs.SetInt("BossCompletado", 1);
         PlayerPrefs.Save();
         SceneManager.LoadScene(0);
     }
 
-    private void Morir()
+    void OnDrawGizmos()
     {
-        Debug.Log("Boss derrotado");
-        Destroy(gameObject);
+        // Círculo del golpe: gris siempre, rojo unos instantes tras golpear
+        bool golpeReciente = Time.time <= tiempoGolpeDibujado + duracionDebugGolpe;
+        Gizmos.color = golpeReciente ? Color.red : new Color(1f, 1f, 1f, 0.3f);
+        Gizmos.DrawWireSphere(transform.position, rangoGolpeMelee);
     }
 }
