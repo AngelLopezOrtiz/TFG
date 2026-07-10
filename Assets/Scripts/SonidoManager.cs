@@ -22,6 +22,9 @@ public class SonidoManager : MonoBehaviour
     public AudioClip sonidoDanioBoss;
     public AudioClip sonidoMuerteBoss;
 
+    [Header("Música")]
+    public AudioClip musicaFondo;
+
     void Awake()
     {
         // Patrón Singleton: si ya existe uno, destruye este
@@ -35,9 +38,27 @@ public class SonidoManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    // Reproduce un efecto de sonido (una sola vez)
     public void ReproducirSonido(AudioClip clip)
     {
         if (clip == null || audioSourceSFX == null) return;
         audioSourceSFX.PlayOneShot(clip);
+    }
+
+    // Reproduce música en bucle
+    public void ReproducirMusica(AudioClip clip, bool enBucle = true)
+    {
+        if (clip == null || audioSourceMusica == null) return;
+
+        audioSourceMusica.clip = clip;
+        audioSourceMusica.loop = enBucle;
+        audioSourceMusica.Play();
+    }
+
+    // Detiene la música
+    public void PararMusica()
+    {
+        if (audioSourceMusica != null)
+            audioSourceMusica.Stop();
     }
 }
