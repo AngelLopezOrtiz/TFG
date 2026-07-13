@@ -46,6 +46,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (vidaActual <= 0)
             Morir();
+        else
+            SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoDanioEnemigo);
     }
 
     private IEnumerator ParpadeoInmune()
@@ -59,6 +61,7 @@ public class EnemyHealth : MonoBehaviour
     private void Morir()
     {
         Debug.Log($"{gameObject.name} ha muerto.");
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoMuerteEnemigo);
         Destroy(gameObject);
     }
 }

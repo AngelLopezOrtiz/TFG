@@ -2930,6 +2930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movimiento2D
   velocidad: 10
+  intervaloPasos: 0.4
 --- !u!212 &360832224
 SpriteRenderer:
   serializedVersion: 2
@@ -4272,6 +4273,8 @@ GameObject:
   m_Component:
   - component: {fileID: 505040117}
   - component: {fileID: 505040116}
+  - component: {fileID: 505040119}
+  - component: {fileID: 505040118}
   m_Layer: 0
   m_Name: SonidoManager
   m_TagString: Untagged
@@ -4291,16 +4294,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28aa1cc55db04f14a8d6698cc566fbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SonidoManager
-  audioSourceSFX: {fileID: 0}
-  audioSourceMusica: {fileID: 0}
-  sonidoPaso: {fileID: 0}
-  sonidoAtaqueJugador: {fileID: 0}
+  audioSourceSFX: {fileID: 505040118}
+  audioSourceMusica: {fileID: 505040119}
+  sonidoPaso: {fileID: 8300000, guid: 761d7b35f9faa8344a0508d8541cc126, type: 3}
+  sonidoAtaqueJugador: {fileID: 8300000, guid: 4dbbeea81ec5d7e4bab9e3ae5dbace9e, type: 3}
   sonidoDanioJugador: {fileID: 0}
   sonidoMuerteJugador: {fileID: 0}
-  sonidoAtaqueMeleeBoss: {fileID: 0}
-  sonidoAtaqueDistanciaBoss: {fileID: 0}
+  sonidoPasarPagina: {fileID: 0}
+  sonidoDanioEnemigo: {fileID: 0}
+  sonidoMuerteEnemigo: {fileID: 0}
+  sonidoAtaqueMeleeBoss: {fileID: 8300000, guid: 7941f3cf5b19bef40a9fd74012056726, type: 3}
+  sonidoAtaqueDistanciaBoss: {fileID: 8300000, guid: 39257775ea4e7e04ca88a2fda4f8f420, type: 3}
   sonidoDanioBoss: {fileID: 0}
   sonidoMuerteBoss: {fileID: 0}
+  musicaFondo: {fileID: 8300000, guid: 32a60fc66f3fedb418244cceadc54e89, type: 3}
 --- !u!4 &505040117
 Transform:
   m_ObjectHideFlags: 0
@@ -4316,6 +4323,200 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &505040118
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505040115}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.528
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &505040119
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505040115}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.403
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &510523200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11057,11 +11258,11 @@ MonoBehaviour:
   distanciaMinAlJugador: 5
   escalaEnemigo: 1
   numeroHabitacion: 1
-  cantidadMagos: 1
-  cantidadMelee: 0
-  cantidadEscudos: 1
+  cantidadMagos: 3
+  cantidadMelee: 2
+  cantidadEscudos: 2
   habitacionMinEscudo: 0
-  cantidadAranas: 1
+  cantidadAranas: 0
   habitacionMinArana: 0
   habitacionesParaBoss: 3
 --- !u!1001 &1564979851

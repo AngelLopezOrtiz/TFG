@@ -73,6 +73,9 @@ public class InteraccionLibro : MonoBehaviour
             generador.IniciarOleada(1);
 
         SetEnemigos(true);
+
+        // Música de fondo solo dentro del libro
+        SonidoManager.Instancia?.ReproducirMusica(SonidoManager.Instancia.musicaFondo);
     }
 
     private void SalirDelLibro()
@@ -92,6 +95,9 @@ public class InteraccionLibro : MonoBehaviour
         if (tiempoRun != null) tiempoRun.PararTiempo();
 
         SetEnemigos(false);
+
+        // Parar la música al volver al mundo 3D
+        SonidoManager.Instancia?.PararMusica();
     }
 
     private void SetEnemigos(bool activo)

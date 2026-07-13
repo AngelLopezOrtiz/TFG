@@ -70,6 +70,7 @@ public class EnemyBoss : MonoBehaviour
     {
         tiempoUltimoMelee = Time.time;
         _animator.SetTrigger("AtacarMelee");
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoAtaqueMeleeBoss);
         // El daño se aplica desde GolpeMelee() via Animation Event
     }
 
@@ -96,6 +97,7 @@ public class EnemyBoss : MonoBehaviour
     {
         tiempoUltimaDistancia = Time.time;
         _animator.SetTrigger("AtacarDistancia");
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoAtaqueDistanciaBoss);
 
         if (prefabProyectil != null)
         {
@@ -120,12 +122,15 @@ public class EnemyBoss : MonoBehaviour
 
         if (vidaActual <= 0)
             Morir();
+        else
+            SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoDanioBoss);
     }
 
     private void Morir()
     {
         muerto = true;
         Debug.Log("Boss derrotado - volviendo al overworld");
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoMuerteBoss);
         PlayerPrefs.SetInt("BossCompletado", 1);
         PlayerPrefs.Save();
         SceneManager.LoadScene(0);

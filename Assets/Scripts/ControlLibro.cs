@@ -60,6 +60,9 @@ public class ControlLibro : MonoBehaviour
         canvasBook.enabled = true;
         autoFlip.AutoStartFlip = false;
         autoFlip.FlipRightPage();
+
+        // Sonido al pasar de página
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoPasarPagina);
     }
 
     public void OnAnimacionTerminada()

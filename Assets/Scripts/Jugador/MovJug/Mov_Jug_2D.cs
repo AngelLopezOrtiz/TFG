@@ -3,9 +3,14 @@ using UnityEngine;
 public class Movimiento2D : MonoBehaviour
 {
     public float velocidad = 5f;
+
+    [Header("Sonido de pasos")]
+    public float intervaloPasos = 0.4f;
+
     private Animator _animator;
     private Rigidbody2D rb;
     private Vector3 escalaOriginal;
+    private float tiempoUltimoPaso = 0f;
 
     void Start()
     {
@@ -36,5 +41,16 @@ public class Movimiento2D : MonoBehaviour
             transform.localScale = new Vector3(-escalaOriginal.x, escalaOriginal.y, escalaOriginal.z);
         else if (x < 0)
             transform.localScale = escalaOriginal;
+
+        // Sonido de pasos: usamos GetAxisRaw para que se corte al instante al soltar
+        float xRaw = Input.GetAxisRaw("Horizontal");
+        float yRaw = Input.GetAxisRaw("Vertical");
+        bool moviendose = xRaw != 0 || yRaw != 0;
+
+        if (moviendose && Time.time >= tiempoUltimoPaso + intervaloPasos)
+        {
+            tiempoUltimoPaso = Time.time;
+            SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoPaso);
+        }
     }
 }

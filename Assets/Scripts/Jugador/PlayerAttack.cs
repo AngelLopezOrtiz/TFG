@@ -39,6 +39,9 @@ public class PlayerAttack : MonoBehaviour
         tiempoUltimoAtaque = Time.time;
         _animator.SetTrigger("Atacar");
 
+        // Sonido de ataque del jugador
+        SonidoManager.Instancia?.ReproducirSonido(SonidoManager.Instancia.sonidoAtaqueJugador);
+
         RaycastHit2D[] golpes = Physics2D.CircleCastAll(
             transform.position,
             rangoAtaque,
