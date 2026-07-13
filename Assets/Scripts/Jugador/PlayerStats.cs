@@ -30,39 +30,43 @@ public class PlayerStats : MonoBehaviour
     private static bool juegoIniciado = false;
 
     void Awake()
+{
+    vidasActuales = vidasMaximas;
+
+    if (!juegoIniciado)
     {
-        vidasActuales = vidasMaximas;
+        // Preservamos si el tutorial ya se vio antes de borrar todo
+        int tutorialVisto = PlayerPrefs.GetInt("TutorialVisto", 0);
 
-        if (!juegoIniciado)
-        {
-            PlayerPrefs.DeleteAll();
-            PlayerPrefs.SetInt("Puntos", 150);
-            PlayerPrefs.SetFloat("Danio", 10f);
-            PlayerPrefs.SetFloat("Defensa", 5f);
-            PlayerPrefs.SetFloat("Velocidad", 5f);
-            PlayerPrefs.SetInt("NivelDanio", 0);
-            PlayerPrefs.SetInt("NivelDefensa", 0);
-            PlayerPrefs.SetInt("NivelVelocidad", 0);
-            PlayerPrefs.SetInt("RevivesMaximos", 0);
-            PlayerPrefs.SetInt("DashDesbloqueado", 0);
-            PlayerPrefs.Save();
-            juegoIniciado = true;
-        }
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("Puntos", 0);
+        PlayerPrefs.SetFloat("Danio", 10f);
+        PlayerPrefs.SetFloat("Defensa", 5f);
+        PlayerPrefs.SetFloat("Velocidad", 5f);
+        PlayerPrefs.SetInt("NivelDanio", 0);
+        PlayerPrefs.SetInt("NivelDefensa", 0);
+        PlayerPrefs.SetInt("NivelVelocidad", 0);
+        PlayerPrefs.SetInt("RevivesMaximos", 0);
+        PlayerPrefs.SetInt("DashDesbloqueado", 0);
+        PlayerPrefs.SetInt("TutorialVisto", tutorialVisto); // restaurado
 
-        // Siempre cargar los stats actuales desde PlayerPrefs (persisten entre escenas)
-        puntos = PlayerPrefs.GetInt("Puntos", 0);
-        danio = PlayerPrefs.GetFloat("Danio", 10f);
-        defensa = PlayerPrefs.GetFloat("Defensa", 5f);
-        velocidad = PlayerPrefs.GetFloat("Velocidad", 5f);
-        nivelDanio = PlayerPrefs.GetInt("NivelDanio", 0);
-        nivelDefensa = PlayerPrefs.GetInt("NivelDefensa", 0);
-        nivelVelocidad = PlayerPrefs.GetInt("NivelVelocidad", 0);
-        revivesMaximos = PlayerPrefs.GetInt("RevivesMaximos", 0);
-        revivesRestantes = revivesMaximos;
-
-        Debug.Log($"Stats cargados - Puntos: {puntos}, Daño: {danio}, Defensa: {defensa}, Velocidad: {velocidad}, Revives: {revivesMaximos}");
+        PlayerPrefs.Save();
+        juegoIniciado = true;
     }
 
+    // Siempre cargar los stats actuales desde PlayerPrefs (persisten entre escenas)
+    puntos = PlayerPrefs.GetInt("Puntos", 0);
+    danio = PlayerPrefs.GetFloat("Danio", 10f);
+    defensa = PlayerPrefs.GetFloat("Defensa", 5f);
+    velocidad = PlayerPrefs.GetFloat("Velocidad", 5f);
+    nivelDanio = PlayerPrefs.GetInt("NivelDanio", 0);
+    nivelDefensa = PlayerPrefs.GetInt("NivelDefensa", 0);
+    nivelVelocidad = PlayerPrefs.GetInt("NivelVelocidad", 0);
+    revivesMaximos = PlayerPrefs.GetInt("RevivesMaximos", 0);
+    revivesRestantes = revivesMaximos;
+
+    Debug.Log($"Stats cargados - Puntos: {puntos}, Daño: {danio}, Defensa: {defensa}, Velocidad: {velocidad}, Revives: {revivesMaximos}");
+}
     public void RecibirDanio(float cantidad)
     {
         ParpadeoJugador parpadeo = GetComponent<ParpadeoJugador>();
